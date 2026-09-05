@@ -1,0 +1,59 @@
+From: "Microsoft Security Operations" <security-alert@micros0ft-support-auth.com>
+To: "Sarah Jenkins" <sjenkins@target-corp.com>
+Subject: CRITICAL: Microsoft 365 Account Suspension Warning - Immediate Action Required
+Date: Fri, 04 Sep 2026 09:14:22 +0000
+Message-ID: <20260904.SX991204@micros0ft-support-auth.com>
+Reply-To: "Account Escalations" <credential-collector@secure-auth-gateway.net>
+Return-Path: <bounce-daemon@external-relay-pool.org>
+Authentication-Results: mx.target-corp.com; spf=fail (sender IP is 198.51.100.24) smtp.mailfrom=micros0ft-support-auth.com; dkim=fail (signature did not verify) header.d=micros0ft-support-auth.com; dmarc=fail action=none header.from=micros0ft-support-auth.com;
+Received: from mail.micros0ft-support-auth.com ([198.51.100.24]) by mx.target-corp.com with ESMTP id sx77a89bc; Fri, 04 Sep 2026 09:14:23 +0000
+Content-Type: text/html; charset="UTF-8"
+MIME-Version: 1.0
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Microsoft 365 Security Notice</title>
+</head>
+<body style="font-family: Arial, sans-serif; color: #1f2937; background-color: #f3f4f6; margin: 0; padding: 20px;">
+  <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff; border: 1px solid #e5e7eb; border-top: 4px solid #0078d4; padding: 30px; border-radius: 4px;">
+    <div style="margin-bottom: 24px;">
+      <h2 style="color: #d83b01; margin: 0 0 10px 0; font-size: 20px;">Critical Security Alert: Account Suspended Within 24 Hours</h2>
+      <p style="color: #6b7280; font-size: 13px; margin: 0;">Tenant Domain: target-corp.com | Event ID: MS-SEC-2026-9921</p>
+    </div>
+    
+    <p style="font-size: 14px; line-height: 1.6; color: #374151;">
+      Our identity protection systems have detected unauthorized sign-in attempts targeting your Microsoft 365 tenant from an anomalous geographic IP range. Immediate action required to retain organizational access.
+    </p>
+
+    <div style="background-color: #fef2f2; border-left: 4px solid #ef4444; padding: 12px 16px; margin: 20px 0;">
+      <p style="margin: 0; font-size: 13px; color: #991b1b; font-weight: bold;">
+        Policy Enforcement Notice:
+      </p>
+      <p style="margin: 4px 0 0 0; font-size: 13px; color: #b91c1c;">
+        Failure to verify your credentials within 24 hours will result in automated account lockout and termination of Active Directory sessions across all enterprise endpoints.
+      </p>
+    </div>
+
+    <div style="text-align: center; margin: 30px 0;">
+      <a href="https://login.micros0ft-support-auth.com/office365/auth-verify?ref=corporate-sso" 
+         style="background-color: #0078d4; color: #ffffff; text-decoration: none; padding: 12px 28px; font-weight: bold; border-radius: 2px; font-size: 14px; display: inline-block;">
+        Verify Identity & Retain Access
+      </a>
+    </div>
+
+    <p style="font-size: 12px; color: #6b7280; line-height: 1.5;">
+      If you did not initiate this request, verify your account immediately through the secure auth gateway above. 
+      Secondary administrative link: <a href="https://portal.secure-auth-gateway.net/signin/mfa-check" style="color: #0078d4;">https://portal.secure-auth-gateway.net/signin/mfa-check</a>
+    </p>
+
+    <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 24px 0;" />
+    
+    <p style="font-size: 11px; color: #9ca3af; margin: 0;">
+      Microsoft Corporation, One Microsoft Way, Redmond, WA 98052.<br />
+      This is an automated notification from Microsoft 365 Cloud Security Operations.
+    </p>
+  </div>
+</body>
+</html>
