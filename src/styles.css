@@ -145,8 +145,13 @@
 
 /* ============ SentinelX cyber design system (ported from tailwind.config.ts) ============ */
 @theme {
+<<<<<<< HEAD
   --font-sans: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+=======
+  --font-sans: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+>>>>>>> 8ffb0bbb306588311054f361cbdf39a0cafe2038
 
   --color-cyber-black: #04070b;
   --color-cyber-surface: #080e16;

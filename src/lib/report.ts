@@ -5,7 +5,10 @@ import type {
   AiAnalysisResult,
   EvidenceMetadata,
 } from "@/types";
+<<<<<<< HEAD
 import { attackStoryPlainText, buildAttackStory } from "./attack-story";
+=======
+>>>>>>> 8ffb0bbb306588311054f361cbdf39a0cafe2038
 import { incidentIdFromHash } from "./evidence";
 
 const NA = "Not available";
@@ -194,6 +197,7 @@ export function buildReportHtml({ email, threat, campaign, ai, evidence }: Repor
   </table>
   ${ai ? `<p class="small"><strong>Analyst interpretation (${esc(ai.modelUsed)}):</strong> ${esc(ai.summary)}</p>` : ""}
 
+<<<<<<< HEAD
   <h2>5. Attack Story</h2>
   ${list(
     buildAttackStory(email, threat, campaign).map(
@@ -203,6 +207,9 @@ export function buildReportHtml({ email, threat, campaign, ai, evidence }: Repor
   )}
 
   <h2>6. Campaign Intelligence</h2>
+=======
+  <h2>5. Campaign Intelligence</h2>
+>>>>>>> 8ffb0bbb306588311054f361cbdf39a0cafe2038
   <table>${campaignSection}</table>
   ${
     relatedRows
@@ -210,10 +217,17 @@ export function buildReportHtml({ email, threat, campaign, ai, evidence }: Repor
       : `<p class="muted">No related historical incidents identified.</p>`
   }
 
+<<<<<<< HEAD
   <h2>7. Delivery Timeline</h2>
   ${list(timeline, "Insufficient evidence to reconstruct a timeline")}
 
   <h2>8. Evidence Integrity</h2>
+=======
+  <h2>6. Attack Timeline</h2>
+  ${list(timeline, "Insufficient evidence to reconstruct a timeline")}
+
+  <h2>7. Evidence Integrity</h2>
+>>>>>>> 8ffb0bbb306588311054f361cbdf39a0cafe2038
   <table>${rows([
     ["Evidence ID", evidence?.evidenceId],
     ["Original artifact", evidence?.filename],
@@ -223,12 +237,17 @@ export function buildReportHtml({ email, threat, campaign, ai, evidence }: Repor
   ])}</table>
   <p class="small muted">Hash computed over the original uploaded artifact prior to processing. The original evidence file is never modified by SentinelX.</p>
 
+<<<<<<< HEAD
   <h2>9. Recommended Actions</h2>
+=======
+  <h2>8. Recommended Actions</h2>
+>>>>>>> 8ffb0bbb306588311054f361cbdf39a0cafe2038
   ${list(recommended)}
 
   <footer>SENTINELX // Traditional tools analyze emails. SentinelX reconstructs campaigns. · All values in this report are derived from the analyzed artifact and the local historical incident dataset.</footer>
 </div></body></html>`;
 }
+<<<<<<< HEAD
 
 export function buildReportText(input: ReportInput): string {
   const { email, threat, campaign, evidence } = input;
@@ -273,3 +292,5 @@ export function buildReportText(input: ReportInput): string {
     actions,
   ].join("\n");
 }
+=======
+>>>>>>> 8ffb0bbb306588311054f361cbdf39a0cafe2038

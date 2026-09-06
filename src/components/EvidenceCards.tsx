@@ -77,9 +77,15 @@ export const EvidenceCards: React.FC<EvidenceCardsProps> = ({ factors }) => {
     return (
       <div className="bg-cyber-panel border border-cyber-border rounded-xl p-8 text-center shadow-panel">
         <CheckCircle2 className="w-10 h-10 text-cyber-emerald mx-auto mb-3" />
+<<<<<<< HEAD
         <h4 className="text-sm font-semibold text-cyber-textPrimary">No indicator cards</h4>
         <p className="text-xs text-cyber-textMuted mt-1 max-w-sm mx-auto font-sans">
           No scoring rules were triggered by this artifact. Insufficient evidence of malicious intent.
+=======
+        <h4 className="text-sm font-semibold text-cyber-textPrimary font-mono">Zero Threat Indicators Triggered</h4>
+        <p className="text-xs text-cyber-textMuted mt-1 max-w-sm mx-auto font-sans">
+          All protocol authentications (SPF, DKIM, DMARC) aligned with publishing policy and no deceptive lookalikes were isolated.
+>>>>>>> 8ffb0bbb306588311054f361cbdf39a0cafe2038
         </p>
       </div>
     );
@@ -92,7 +98,11 @@ export const EvidenceCards: React.FC<EvidenceCardsProps> = ({ factors }) => {
         <div>
           <h4 className="text-xs font-bold uppercase tracking-wider text-cyber-textPrimary font-mono flex items-center gap-2">
             <Terminal className="w-4 h-4 text-cyber-emerald" />
+<<<<<<< HEAD
             Evidence ({triggeredFactors.length} indicators)
+=======
+            Explainable Evidence Matrix ({triggeredFactors.length} Rules Triggered)
+>>>>>>> 8ffb0bbb306588311054f361cbdf39a0cafe2038
           </h4>
           <p className="text-[11px] text-cyber-textMuted mt-0.5 font-sans">
             Every point contribution is strictly verifiable and mapped to raw extracted RFC telemetry.
